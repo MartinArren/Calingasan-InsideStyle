@@ -330,7 +330,7 @@ img {
 
 /* ABOUT SECTION MOBILE */
 @media screen and (max-width:520px) {
-    .aboutSection_Left {
+    .aboutSection_wrapper img {
     display: none;
     }
     .aboutSection  h2::before{
@@ -363,12 +363,7 @@ img {
     bottom: 1rem;
     left: 1rem;
 }
-.catalogSection_wrapper{
-    display: flex;
-    justify-content: space-between;
-    gap: 5rem;
-    align-items: center;
-}
+
 .catalogSection_card{
     background-color: var(--clr-semilight);
     max-width: 40rem;
@@ -391,7 +386,7 @@ img {
 }
 
 /* CATALOG SECTION MOBILE */
-@media screen and (max-width: 520px){
+@media screen and (max-width:520px){
     .catalogSection h2::after{
     display: none;
     }
@@ -446,6 +441,95 @@ img {
 .footer ul li a{
     color: var(--clr-semilight);
 }
+
+/* ABOUT PAGE */
+.aboutBanner{
+    padding: 3rem 0;
+}
+.aboutBanner_wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+}
+.aboutBanner_Right{
+    max-width: 85rem;
+}
+.aboutBanner_Right h1{
+    color: var(--clr-dark);
+    font-size: 7rem;
+    font-weight: 700;
+    letter-spacing: 2rem;
+    margin-bottom: 2.5rem;
+}
+.aboutBanner_Right p{
+    margin-bottom: 2rem;
+}
+.aboutBanner_Right ul{
+    display: flex;
+    gap: 1rem;
+}
+.aboutBanner_Right ul li a{
+    color: var(--clr-dark);
+    font-size: 2.5rem;
+    text-align: justify;
+}
+.aboutBanner_Left small{
+    margin-left: 1rem;
+}
+.aboutBanner_Left small::before{
+    display: inline-block;
+    position: relative;
+    content: " ";
+    background-color: var(--clr-dark);
+    width: 35rem;
+    height: .2rem;
+    bottom: .5rem;
+    right: 1rem;
+    left: 0;
+}
+/* LATEST STYLE SECTION */
+.lateststyle{
+    background-color: var(--clr-dark);
+    padding: 2rem 0;
+    color: var(--clr-light);
+}
+.lateststyle h1{
+    color: var(--clr-primary);
+    font-weight: 700;
+    font-size: 5rem;
+}
+.lateststyle_wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5rem;
+}
+.lateststyleSection_card{
+    background-color: var(--clr-light);
+    color: var(--clr-dark);
+    max-width: 150rem;
+    margin-top: 4rem;
+}
+.lateststyleSection_card img{
+    width: 150rem;
+}
+.lateststyleSection_card--content{
+    padding: .3rem;
+}
+.lateststyleSection_card--content h3{
+    color: var(--clr-secondary);
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+}
+.lateststyleSection_card--content p{
+    margin-bottom: 5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+
 
 /* REAPEATABLE */
 .btn{
